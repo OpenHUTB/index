@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e3d8263e91.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
     <title>SimForge - Physical AI Simulation for Robotics & Autonomous Systems</title>
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -26,90 +22,93 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Physical AI Simulation<br>for Real World robotics solutions</h1>
-            <p>Build, test, and train autonomous systems with photorealistic 3D simulation environments. From concept to
-                deployment, SimForge accelerates your development cycle.</p>
+            <h1>Physical AI Simulation<br>for the Real World</h1>
+            <p>Build, test, and train autonomous systems with photorealistic 3D simulation environments. From concept to deployment, SimForge accelerates your development cycle.</p>
             <a href="#contact" class="cta-button">Get Started</a>
+            
+            <div class="hero-usps">
+                <div class="usp-item">
+                    <div class="usp-icon">⚡</div>
+                    <span class="usp-text">Accelerate Deployment</span>
+                </div>
+                <div class="usp-item">
+                    <div class="usp-icon">🛡</div>
+                    <span class="usp-text">Minimize Risk</span>
+                </div>
+                <div class="usp-item">
+                    <div class="usp-icon">💰</div>
+                    <span class="usp-text">Lower Costs</span>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="applications" class="applications">
         <div class="container">
             <div class="section-header">
-                <h2></h2>Application Domains</h2>
+                <h2>Target Applications</h2>
                 <p>Purpose-built simulation solutions for next-generation autonomous systems</p>
             </div>
             <div class="app-grid">
                 <div class="app-card" onclick="toggleDetails('automotive')">
-                    <div class="app-card-image"
-                        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./img/automotive.png');">
-                    </div>
+                    <div class="app-card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80');"></div>
                     <div class="app-card-content">
                         <h3>Automotive</h3>
-                        <p>Simulation for autonomous vehicle development and advanced driver assistance systems.
-                        </p>
+                        <p>Autonomous vehicles and advanced driver assistance systems with real-world scenario testing.</p>
                         <div id="automotive" class="app-details">
                             <h4>Key Capabilities</h4>
                             <ul>
-                                <li>High-fidelity sensor simulation (LiDAR, RADAR, cameras)</li>
-                                <li>Vehicle dynamics simulation</li>
-                                <li>Ground truth generation - semantic labels and bounding boxes</li>
-                                <li>Weather and lighting simulation</li>
-                                <li>OpenDRIVE and OpenSCENARIO compatibility</li>
-                                <li>Scalability - contanerization support</li>
+                                <li>High-fidelity sensor simulation (LiDAR, radar, cameras)</li>
+                                <li>Complex urban and highway environments</li>
+                                <li>Weather and lighting condition variations</li>
+                                <li>Traffic scenario generation and edge case testing</li>
+                                <li>ADAS validation and verification</li>
+                                <li>V2X communication simulation</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="app-card" onclick="toggleDetails('warehouse')">
-                    <div class="app-card-image"
-                        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./img/warehouse_robotics.png');">
-                    </div>
+                    <div class="app-card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80');"></div>
                     <div class="app-card-content">
                         <h3>Warehouse Robotics</h3>
-                        <p>Warehouse environment simulation for digital twins of autonomous mobile robots and robotic
-                            arms.</p>
+                        <p>Optimize material handling and inventory management with intelligent robotic systems.</p>
                         <div id="warehouse" class="app-details">
                             <h4>Key Capabilities</h4>
                             <ul>
-                                <li>3D warehouse interior simulation</li>
-                                <li>Autonomous mobile robot and articulated arm simulation</li>
-                                <li>Sensor simulation - camera, LIDAR</li>
-                                <li>Conveyor network and material handling system simulation</li>
-                                <li>ROS connectivity</li>
-                                <li>Ground truth generation - semantic labels, bounding boxes</li>
+                                <li>Multi-robot coordination and path planning</li>
+                                <li>Picking and manipulation simulation</li>
+                                <li>Dynamic obstacle avoidance</li>
+                                <li>Fleet management optimization</li>
+                                <li>Human-robot interaction scenarios</li>
+                                <li>Warehouse layout optimization</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="app-card" onclick="toggleDetails('delivery')">
-                    <div class="app-card-image"
-                        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=800&q=80');">
-                    </div>
+                    <div class="app-card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=800&q=80');"></div>
                     <div class="app-card-content">
                         <h3>Last-Mile Delivery</h3>
-                        <p>Simulation for autonomous delivery vehicles, robots and drones in urban and suburban
-                            environments.</p>
+                        <p>Autonomous delivery robots and drones for urban and suburban environments.</p>
                         <div id="delivery" class="app-details">
                             <h4>Key Capabilities</h4>
                             <ul>
-                                <li>High fidelity urban and suburban environment simulation</li>
-                                <li>3D digital twins: vehicles, robots and buildings</li>
-                                <li>ROS connectivity</li>
-                                <li>Robot and vehicle dynamics modelling</li>
-                                <li>Omniverse asset ecosystem</li>
-                                <li>Ground truth generation - semantic labels, bounding boxes</li>
+                                <li>Sidewalk and pedestrian navigation</li>
+                                <li>Doorstep delivery scenarios</li>
+                                <li>Urban environment modeling</li>
+                                <li>Drone flight dynamics and regulations</li>
+                                <li>Weather impact on delivery operations</li>
+                                <li>Route optimization and battery management</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="app-card" onclick="toggleDetails('aerospace')">
-                    <div class="app-card-image"
-                        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./img/aerospace.png');">
-                    </div>
+                    <div class="app-card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=800&q=80');"></div>
                     <div class="app-card-content">
                         <h3>Aerospace</h3>
                         <p>UAV and autonomous aircraft systems with realistic flight dynamics and environments.</p>
@@ -118,55 +117,52 @@
                             <ul>
                                 <li>High-fidelity flight dynamics modeling</li>
                                 <li>Atmospheric and weather simulation</li>
-                                <li>Sensor suite simulation (GPS, IMU, altimeter, cameras)</li>
-                                <li>Flight-deck instrumentation visualization</li>
-                                <li>CESIUM ion integration for geospatial data</li>
-                                <li>FMU integration</li>
-                                <li>ADSB data integration</li>
+                                <li>Sensor suite integration (GPS, IMU, vision)</li>
+                                <li>Autonomous takeoff and landing scenarios</li>
+                                <li>Multi-UAV coordination</li>
+                                <li>Mission planning and execution</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="app-card" onclick="toggleDetails('logistics')">
-                    <div class="app-card-image"
-                        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./img/logistics_1.png');">
-                    </div>
+                    <div class="app-card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=800&q=80');"></div>
                     <div class="app-card-content">
                         <h3>Logistics</h3>
-                        <p>End-to-end supply chain simulation for automation with intelligent robotics.</p>
+                        <p>End-to-end supply chain automation with intelligent robotics and AI systems.</p>
                         <div id="logistics" class="app-details">
                             <h4>Key Capabilities</h4>
                             <ul>
                                 <li>Cross-dock operations simulation</li>
-                                <li>Automated guided vehicles (AGV) digital twins</li>
-                                <li>Conveyor network and material handling system simulation</li>
-                                <li>V2X and V2V imitation</li>
+                                <li>Automated guided vehicles (AGV) testing</li>
+                                <li>Loading and unloading optimization</li>
+                                <li>Multi-facility coordination</li>
+                                <li>Inventory tracking and management</li>
+                                <li>Process optimization and bottleneck analysis</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="app-card" onclick="toggleDetails('manufacturing')">
-                    <!-- <div class="app-card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&q=80');"></div> -->
-                    <div class="app-card-image"
-                        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./img/manufacturing.jpg');">
-                    </div>
+                    <div class="app-card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&q=80');"></div>
                     <div class="app-card-content">
                         <h3>Manufacturing & Assembly</h3>
-                        <p>High fidelity digital twins of autonomous mobile robots and robotic arms and their workspaces.</p>
+                        <p>Intelligent robotic systems for automated production lines and assembly operations.</p>
                         <div id="manufacturing" class="app-details">
                             <h4>Key Capabilities</h4>
                             <ul>
-                                <li>Multi-modal perception simulation</li>
-                                <li>High-fidelity physics simulation</li>
-                                <li>Shared workspace simulation</li>
-                                <li>Parallel scalability for reinforcement learning</li>
+                                <li>Robotic arm manipulation and kinematics</li>
+                                <li>Assembly line optimization and planning</li>
+                                <li>Quality inspection and defect detection</li>
+                                <li>Collaborative robot (cobot) interaction</li>
+                                <li>Part handling and precision placement</li>
+                                <li>Production workflow simulation and analysis</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -175,7 +171,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>Why SimForge</h2>
-                <p>Comprehensive simulation solutions for autonomous systems development</p>
+                <p>Comprehensive simulation solutions for autonomous system development</p>
             </div>
             <div class="features-grid">
                 <div class="feature-item">
@@ -184,30 +180,28 @@
                     <p>Access our suite of pre-built simulators and start testing immediately with minimal setup.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon"><i class="fa-solid fa-gears"></i></div>
+                    <div class="feature-icon">⚙</div>
                     <h3>Custom Solutions</h3>
-                    <p>Tailored simulation environments developed specifically for your unique requirements and use
-                        cases.</p>
+                    <p>Tailored simulation environments designed specifically for your unique requirements and use cases.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="feature-icon">∫</div>
                     <h3>API Integration</h3>
                     <p>Seamlessly connect to autonomy stacks and AI systems through our comprehensive API framework.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <div class="feature-icon">◉</div>
                     <h3>Training Data</h3>
-                    <p>Generate high-quality synthetic data for machine learning and neural network training at scale.
-                    </p>
+                    <p>Generate high-quality synthetic data for machine learning and neural network training at scale.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon"><i class="fa-solid fa-image"></i></div>
+                    <div class="feature-icon">◈</div>
                     <h3>Photorealistic Environments</h3>
                     <p>Leverage cutting-edge graphics engines for unparalleled visual fidelity and realism.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon"><i class="fa-solid fa-atom"></i></div>
-                    <h3>Physically Accurate</h3>
+                    <div class="feature-icon">∆</div>
+                    <h3>Physics Accuracy</h3>
                     <p>Advanced physics simulation for precise modeling of real-world dynamics and interactions.</p>
                 </div>
             </div>
@@ -217,78 +211,57 @@
     <section class="project-showcase">
         <div class="container">
             <div class="section-header">
-                <h2>Product Showcase</h2>
+                <h2>Project Showcase</h2>
                 <p>Explore our simulation solutions in action</p>
             </div>
-
+            
             <div class="carousel-container">
                 <div class="carousel-track" id="carouselTrack">
-                    <div class="carousel-item active">
-                        <div class="carousel-image">
-                            <video id="carla-video" class="bg-video" autoplay muted loop playsinline preload="auto">
-                                <source src="./img/carla.mp4" type="video/mp4">
-                            </video>
-                        </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image" style="background-image: url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&q=80');"></div>
                         <div class="carousel-overlay">
-                            <h3>CARLA Simulator</h3>
-                            <p>High-fidelity simulator for autonomous vehicle development. Cameras, LIDAR, RADAR. Ground
-                                truth semantic labelling and </p>
+                            <h3>Autonomous Vehicle Testing Platform</h3>
+                            <p>High-fidelity urban simulation environment for testing autonomous driving systems across diverse weather conditions, traffic scenarios, and edge cases. Integrated sensor simulation for LiDAR, radar, and camera arrays.</p>
                         </div>
                     </div>
-
+                    
                     <div class="carousel-item">
-                        <div class="carousel-image">
-                            <div class="carousel-image" style="background-image: url('./img/carla.mp4');">
-                                <video autoplay muted loop playsinline class="bg-video" poster="./img/carla_frame.png">
-                                    <source src="./img/explorer.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
+                        <div class="carousel-image" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80');"></div>
                         <div class="carousel-overlay">
-                            <h3>IPEx Lunar Simulator</h3>
-                            <p>State of the art lunar robotics simulator created for the Lunar Autonomy Challenge
-                                competition.</p>
+                            <h3>Warehouse Automation System</h3>
+                            <p>Multi-robot coordination platform simulating complex warehouse operations with dynamic path planning, collision avoidance, and real-time task optimization for fleet management.</p>
                         </div>
                     </div>
-
+                    
                     <div class="carousel-item">
-                        <div class="carousel-image">
-                            <video autoplay muted loop playsinline class="bg-video" poster="./img/carla_frame.png">
-                                <source src="./img/aerosim.mp4" type="video/mp4">
-                            </video>
-                        </div>
+                        <div class="carousel-image" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80');"></div>
                         <div class="carousel-overlay">
-                            <h3>Aerosim Flight Simulator</h3>
-                            <p>Scalable, performant flight simulator for use in the development of autonomous systems in
-                                aerospace engineering.</p>
+                            <h3>Drone Navigation System</h3>
+                            <p>Advanced UAV simulation featuring realistic flight dynamics, atmospheric conditions, and sensor integration for autonomous aerial navigation and mission planning in complex environments.</p>
                         </div>
                     </div>
-
+                    
                     <div class="carousel-item">
-                        <div class="carousel-image">
-                            <video autoplay muted loop playsinline class="bg-video" poster="./img/carla_frame.png">
-                                <source src="./img/spear.mp4" type="video/mp4">
-                            </video>
-                        </div>
+                        <div class="carousel-image" style="background-image: url('https://images.unsplash.com/photo-1561089489-f13d5e730d72?w=1200&q=80');"></div>
                         <div class="carousel-overlay">
-                            <h3>Industrial Robotics Simulator</h3>
-                            <p>Simulator for manufacturing and assembly, logistics and last-mile delivery.</p>
+                            <h3>Industrial Robotic Assembly</h3>
+                            <p>Precision manipulation and assembly line simulation with collaborative robotics, featuring real-time kinematics, force feedback, and quality control integration for manufacturing optimization.</p>
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="carousel-button prev" onclick="moveCarousel(-1)">
                     <svg viewBox="0 0 24 24">
-                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
                     </svg>
                 </div>
-
+                
                 <div class="carousel-button next" onclick="moveCarousel(1)">
                     <svg viewBox="0 0 24 24">
-                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
                     </svg>
                 </div>
-
+                
                 <div class="carousel-indicators">
                     <div class="indicator active" onclick="goToSlide(0)"></div>
                     <div class="indicator" onclick="goToSlide(1)"></div>
@@ -299,12 +272,12 @@
         </div>
     </section>
 
-        <section class="capabilities-dive">
+    <section class="capabilities-dive">
         <div class="capabilities-track" id="capabilitiesTrack">
             <!-- Automotive Slide -->
             <div class="capability-slide">
                 <div class="capability-background">
-                    <img src="./img/automotive.png" alt="Automotive">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=1920&q=80" alt="Automotive">
                 </div>
                 <div class="capability-content">
                     <h2>Automotive</h2>
@@ -340,7 +313,7 @@
             <!-- Warehouse Robotics Slide -->
             <div class="capability-slide">
                 <div class="capability-background">
-                    <img src="./img/warehouse_robotics.png" alt="Warehouse">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&q=80" alt="Warehouse">
                 </div>
                 <div class="capability-content">
                     <h2>Warehouse Robotics</h2>
@@ -376,7 +349,7 @@
             <!-- Aerospace Slide -->
             <div class="capability-slide">
                 <div class="capability-background">
-                    <img src="./img/space.png" alt="Aerospace">
+                    <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=1920&q=80" alt="Aerospace">
                 </div>
                 <div class="capability-content">
                     <h2>Aerospace</h2>
@@ -448,7 +421,7 @@
             <!-- Logistics Slide -->
             <div class="capability-slide">
                 <div class="capability-background">
-                    <img src="./img/logistics.png" alt="Logistics">
+                    <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=1920&q=80" alt="Logistics">
                 </div>
                 <div class="capability-content">
                     <h2>Logistics</h2>
@@ -545,12 +518,12 @@
         <div class="container">
             <div class="section-header">
                 <h2>Technology Stack</h2>
-                <p>SimForge solutions are built on industry-leading simulation and graphics platforms</p>
+                <p>Built on industry-leading simulation and graphics platforms</p>
             </div>
             <div class="tech-grid">
                 <div class="tech-item">
                     <div class="tech-logo">
-                        <img src="./img/carla_logo.png">
+                        <!-- Logo placeholder -->
                     </div>
                     <div>
                         <h4>CARLA</h4>
@@ -558,17 +531,17 @@
                     </div>
                 </div>
                 <div class="tech-item">
-                    <div class="tech-logo" style="background: white;">
-                        <img src="./img/omniverse_logo.webp">
+                    <div class="tech-logo">
+                        <!-- Logo placeholder -->
                     </div>
                     <div>
                         <h4>NVIDIA Omniverse</h4>
-                        <p>3D design and simulation collaboration</p>
+                        <p>Real-time 3D design collaboration</p>
                     </div>
                 </div>
                 <div class="tech-item">
                     <div class="tech-logo">
-                        <img src="./img/isaac_sim_logo.jpeg">
+                        <!-- Logo placeholder -->
                     </div>
                     <div>
                         <h4>Isaac Sim</h4>
@@ -576,30 +549,30 @@
                     </div>
                 </div>
                 <div class="tech-item">
-                    <div class="tech-logo" style="background: white;">
-                        <img src="./img/chrono_logo.png">
+                    <div class="tech-logo">
+                        <!-- Logo placeholder -->
                     </div>
                     <div>
-                        <h4>Chrono</h4>
+                        <h4>Project Chrono</h4>
                         <p>High-fidelity physics engine</p>
                     </div>
                 </div>
                 <div class="tech-item">
-                    <div class="tech-logo" style="background: white;">
-                        <img src="./img/ue.png">
+                    <div class="tech-logo">
+                        <!-- Logo placeholder -->
                     </div>
                     <div>
                         <h4>Unreal Engine 5</h4>
-                        <p>Photorealistic rendering engine</p>
+                        <p>Photorealistic rendering</p>
                     </div>
                 </div>
                 <div class="tech-item">
-                    <div class="tech-logo" style="background: white;">
-                        <img src="./img/unity_lego_logo.png">
+                    <div class="tech-logo">
+                        <!-- Logo placeholder -->
                     </div>
                     <div>
                         <h4>Unity 3D</h4>
-                        <p>Rendering engine with cross-platform development</p>
+                        <p>Cross-platform development</p>
                     </div>
                 </div>
             </div>
@@ -613,7 +586,7 @@
                     <h2>Get in Touch</h2>
                     <p>Ready to transform your development workflow? Let's discuss how SimForge can help.</p>
                 </div>
-
+                
                 <form class="contact-form" onsubmit="handleSubmit(event)">
                     <div class="form-row">
                         <div class="form-group">
@@ -625,7 +598,7 @@
                             <input type="text" id="lastName" name="lastName" required>
                         </div>
                     </div>
-
+                    
                     <div class="form-row">
                         <div class="form-group">
                             <label for="email">Email</label>
@@ -636,7 +609,7 @@
                             <input type="text" id="company" name="company" required>
                         </div>
                     </div>
-
+                    
                     <div class="form-group">
                         <label for="industry">Industry Focus</label>
                         <select id="industry" name="industry" required>
@@ -650,20 +623,19 @@
                             <option value="other">Other</option>
                         </select>
                     </div>
-
+                    
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message"
-                            placeholder="Tell us about your project and simulation needs..." required></textarea>
+                        <textarea id="message" name="message" placeholder="Tell us about your project and simulation needs..." required></textarea>
                     </div>
-
+                    
                     <button type="submit" class="submit-button">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
+    <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -677,6 +649,7 @@
                     <a href="#applications">Last-Mile Delivery</a>
                     <a href="#applications">Aerospace</a>
                     <a href="#applications">Logistics</a>
+                    <a href="#applications">Manufacturing & Assembly</a>
                 </div>
                 <div class="footer-section">
                     <h4>Company</h4>
@@ -701,13 +674,13 @@
         function toggleDetails(id) {
             const detail = document.getElementById(id);
             const allDetails = document.querySelectorAll('.app-details');
-
+            
             allDetails.forEach(d => {
                 if (d.id !== id) {
                     d.classList.remove('active');
                 }
             });
-
+            
             detail.classList.toggle('active');
         }
 
@@ -725,23 +698,25 @@
             });
         });
 
-        // Carousel
-        window.addEventListener("load", () => {
-            const firstVideo = document.getElementById('carla-video');
-            console.log(firstVideo)
+        // Form submission handler
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Here you would typically send the data to your backend
+            console.log('Form submitted:', data);
+            
+            // Show success message (you can customize this)
+            alert('Thank you for your message! We will get back to you soon.');
+            
+            // Reset form
+            event.target.reset();
+        }
 
-            if (firstVideo) {
-                setTimeout(() => {
-                    console.log('now');
-                    //firstVideo.play();
-                    firstVideo.play().catch(() => {
-                        console.log('fail')
-                    });
-                }, 1000);
-
-            }
-        });
-
+        // Carousel functionality
         let currentSlide = 0;
         const track = document.getElementById('carouselTrack');
         const indicators = document.querySelectorAll('.indicator');
@@ -749,7 +724,7 @@
 
         function updateCarousel() {
             track.style.transform = `translateX(-${currentSlide * 100}%)`;
-
+            
             indicators.forEach((indicator, index) => {
                 indicator.classList.toggle('active', index === currentSlide);
             });
@@ -757,13 +732,13 @@
 
         function moveCarousel(direction) {
             currentSlide += direction;
-
+            
             if (currentSlide < 0) {
                 currentSlide = totalSlides - 1;
             } else if (currentSlide >= totalSlides) {
                 currentSlide = 0;
             }
-
+            
             updateCarousel();
         }
 
@@ -775,7 +750,7 @@
         // Auto-advance carousel every 5 seconds
         setInterval(() => {
             moveCarousel(1);
-        }, 10000);
+        }, 5000);
 
         // Capabilities Deep Dive functionality
         let currentCapability = 0;
@@ -807,8 +782,6 @@
             currentCapability = index;
             updateCapabilities();
         }
-
     </script>
 </body>
-
 </html>
