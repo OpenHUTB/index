@@ -628,7 +628,7 @@
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
+    <!-- <section id="contact" class="contact-section">
         <div class="container">
             <div class="contact-container">
                 <div class="section-header">
@@ -683,6 +683,64 @@
                 </form>
             </div>
         </div>
+    </section> -->
+
+        <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="section-header">
+                    <h2>Get in Touch</h2>
+                    <p>Ready to transform your development workflow? Let's discuss how SimForge can help.</p>
+                </div>
+                
+                <form class="contact-form" name="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdZAPIYlq3eFtZv-gJxqtXvBKuxELkSJHnyCFuhj4G7uXNFww/formResponse" method="POST" target="hidden_iframe" onsubmit="handleSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="entry.107019508" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="entry.201168832" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="entry.1156617537" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="entry.1917003079" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="industry">Industry Focus</label>
+                        <select id="industry" name="entry.69875245_sentinel" required>
+                            <option value="">Select an industry</option>
+                            <option value="automotive">Automotive</option>
+                            <option value="warehouse">Warehouse Robotics</option>
+                            <option value="delivery">Last-Mile Delivery</option>
+                            <option value="aerospace">Aerospace</option>
+                            <option value="logistics">Logistics</option>
+                            <option value="manufacturing">Manufacturing & Assembly</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="entry.562458079" placeholder="Tell us about your project and simulation needs..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Send Message</button>
+                    
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer id="contact">
@@ -723,46 +781,19 @@
 
         // Form submission handler
         function handleSubmit(event) {
-            event.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(event.target);
-            const data = Object.fromEntries(formData);
-            
-            // Replace this URL with your Google Apps Script web app URL
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwwOKUqbIxGjuRK-W_AEw39437oFlpY-185PzmHR6gcn5u_i9LJ6rBGY6qwh3utigow/exec';
-            
-            // Disable submit button and show loading state
-            const submitButton = event.target.querySelector('.submit-button');
+            const submitButton = document.querySelector('.submit-button');
             const originalText = submitButton.textContent;
             submitButton.disabled = true;
             submitButton.textContent = 'Sending...';
             
-            // Send data to Google Sheet
-            fetch(scriptURL, {
-                method: 'POST',
-                body: JSON.stringify(data),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-            .then(response => response.json())
-            .then(result => {
-                if (result.status === 'success') {
-                    alert('Thank you for your message! We will get back to you soon.');
-                    event.target.reset();
-                } else {
-                    alert('There was an error submitting your form. Please try again or email us directly at info@simforge.io');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('There was an error submitting your form. Please try again or email us directly at info@simforge.io');
-            })
-            .finally(() => {
+            setTimeout(() => {
+                alert('Thank you for your message! We will get back to you soon.');
+                document.querySelector('.contact-form').reset();
                 submitButton.disabled = false;
                 submitButton.textContent = originalText;
-            });
+            }, 1000);
+            
+            return true;
         }
 
         function toggleDetails(id) {
