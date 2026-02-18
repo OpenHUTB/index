@@ -22,6 +22,7 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: CSDN Report
           body: file://email.txt
+          # 接受邮箱的地址
           to: ${{ secrets.RECEIVER }}
           from: GitHub Actions
           content_type: text/plain
