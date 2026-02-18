@@ -82,26 +82,26 @@
                     </div>
                 </div>
 
-                <div class="app-card" onclick="toggleDetails('delivery')">
+                <div class="app-card" onclick="toggleDetails('manufacturing')">
+                    <!-- <div class="app-card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&q=80');"></div> -->
                     <div class="app-card-image"
-                        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./img/last_mile.png');">
+                        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./img/manufacturing.jpg');">
                     </div>
                     <div class="app-card-content">
-                        <h3>最后一公里配送</h3>
-                        <p>用于城市和郊区环境中自主配送车辆、机器人和无人机的仿真。</p>
-                        <div id="delivery" class="app-details">
+                        <h3>制造与装配</h3>
+                        <p>高保真机器人操作臂及其工作空间的数字孪生。</p>
+                        <div id="manufacturing" class="app-details">
                             <h4>主要能力</h4>
                             <ul>
-                                <li>高保真城市和郊区环境仿真</li>
-                                <li>3D 数字孪生：车辆、机器人和建筑物</li>
-                                <li>ROS 连接性</li>
-                                <li>机器人和车辆动力学建模</li>
-                                <li>Omniverse 资产生态系统</li>
-                                <li>生成真实标签——语义标签和边界框</li>
+                                <li>多模态感知仿真</li>
+                                <li>高保真物理仿真</li>
+                                <li>共享工作空间仿真</li>
+                                <li>强化学习的并行可扩展性</li>
                             </ul>
                         </div>
                     </div>
                 </div>
+
 
                 <div class="app-card" onclick="toggleDetails('aerospace')">
                     <div class="app-card-image"
@@ -144,21 +144,22 @@
                     </div>
                 </div>
 
-                <div class="app-card" onclick="toggleDetails('manufacturing')">
-                    <!-- <div class="app-card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&q=80');"></div> -->
+                <div class="app-card" onclick="toggleDetails('delivery')">
                     <div class="app-card-image"
-                        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./img/manufacturing.jpg');">
+                        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./img/last_mile.png');">
                     </div>
                     <div class="app-card-content">
-                        <h3>制造与装配</h3>
-                        <p>高保真机器人操作臂及其工作空间的数字孪生。</p>
-                        <div id="manufacturing" class="app-details">
+                        <h3>配送</h3>
+                        <p>用于城市和郊区环境中自主配送车辆、机器人和无人机的仿真。</p>
+                        <div id="delivery" class="app-details">
                             <h4>主要能力</h4>
                             <ul>
-                                <li>多模态感知仿真</li>
-                                <li>高保真物理仿真</li>
-                                <li>共享工作空间仿真</li>
-                                <li>强化学习的并行可扩展性</li>
+                                <li>高保真城市和郊区环境仿真</li>
+                                <li>3D 数字孪生：车辆、机器人和建筑物</li>
+                                <li>ROS 连接性</li>
+                                <li>机器人和车辆动力学建模</li>
+                                <li>Omniverse 资产生态系统</li>
+                                <li>生成真实标签——语义标签和边界框</li>
                             </ul>
                         </div>
                     </div>
@@ -397,7 +398,7 @@
                     <img src="./img/last_mile.png" alt="Delivery">
                 </div>
                 <div class="capability-content">
-                    <h2>最后一公里配送</h2>
+                    <h2>配送</h2>
                     <div class="capability-grid">
                         <div class="capability-item">
                             <h4>3D 城市和郊区环境</h4>
@@ -474,6 +475,18 @@
 
                     <div class="carousel-item">
                         <div class="carousel-image">
+                            <video autoplay muted loop playsinline class="bg-video" poster="./img/carla_frame.png">
+                                <source src="./img/spear.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="carousel-overlay">
+                            <h3>配送中心模拟器</h3>
+                            <p>高度详细的大型配送中心模拟，包括输送系统和人工操作。</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-image">
                             <div class="carousel-image" style="background-image: url('./img/carla.mp4');">
                                 <video autoplay muted loop playsinline class="bg-video" poster="./img/carla_frame.png">
                                     <source src="./img/explorer.mp4" type="video/mp4">
@@ -498,17 +511,6 @@
                         </div>
                     </div>
 
-                    <div class="carousel-item">
-                        <div class="carousel-image">
-                            <video autoplay muted loop playsinline class="bg-video" poster="./img/carla_frame.png">
-                                <source src="./img/spear.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="carousel-overlay">
-                            <h3>配送中心模拟器</h3>
-                            <p>高度详细的大型配送中心模拟，包括输送系统和人工操作。</p>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="carousel-button prev" onclick="moveCarousel(-1)">
@@ -720,7 +722,7 @@
                             <option value="">选择一个行业</option>
                             <option value="automotive">汽车</option>
                             <option value="warehouse">仓储机器人</option>
-                            <option value="delivery">最后一公里配送</option>
+                            <option value="delivery">配送</option>
                             <option value="aerospace">低空</option>
                             <option value="logistics">物流</option>
                             <option value="manufacturing">制造与装配</option>
@@ -752,7 +754,7 @@
                     <h4>解决方案</h4>
                     <a href="#applications">汽车</a>
                     <a href="#applications">仓储机器人</a>
-                    <a href="#applications">最后一公里配送</a>
+                    <a href="#applications">配送</a>
                     <a href="#applications">低空</a>
                     <a href="#applications">物流</a>
                 </div>

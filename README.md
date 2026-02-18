@@ -1,8 +1,8 @@
-# SimForge.io website
+# OpenHUTB 产品网站
 
-This repository contains the HTML, CSS and JavaScript for the SimForge.io website hosted at https://simforge.io along with the images and videos
+此仓库包含 SimForge.io 网站（网址为 https://openhutb.github.io/index/ ）的 HTML、CSS 和 JavaScript 代码，以及图片和视频。
 
-Push or merge changes into the master branch to trigger new builds. 
+将更改推入或合并到主分支中以触发新的生成。
 
 ![Website home](img/website_home.png)
 
