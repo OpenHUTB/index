@@ -21,7 +21,7 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: CSDN Report
-          body: file://email.txt
+          body: Build job of ${{github.repository}} completed successfully!
           # 接受邮箱的地址
           to: ${{ secrets.RECEIVER }}
           from: GitHub Actions
