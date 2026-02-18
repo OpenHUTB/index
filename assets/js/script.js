@@ -6,7 +6,7 @@ function handleSubmit(event) {
     submitButton.textContent = 'Sending...';
 
     setTimeout(() => {
-        alert('Thank you for your message! We will get back to you soon.');
+        alert('感谢您的留言！我们会尽快回复您。');
         document.querySelector('.contact-form').reset();
         submitButton.disabled = false;
         submitButton.textContent = originalText;
