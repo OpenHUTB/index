@@ -25,7 +25,7 @@ jobs:
           # 1. 启用 2 步验证：https://support.google.com/accounts/answer/185839?hl=en&co=GENIE.Platform%3DAndroid
           # 2. 为创建 App 密码：https://support.google.com/accounts/answer/185833?hl=en
           password: ${{ secrets.MAIL_PASSWORD }}
-          subject: CSDN Report
+          subject: Github Action Email
           body: Build job of ${{github.repository}} completed successfully!
           # 接受邮箱的地址
           to: ${{ secrets.RECEIVER }}
