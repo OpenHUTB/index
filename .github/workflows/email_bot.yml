@@ -18,6 +18,7 @@ jobs:
           server_address: smtp.gmail.com
           server_port: 465
           # # Optional (recommended) mail server username:
+          # 用户名：google账户名
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: CSDN Report
