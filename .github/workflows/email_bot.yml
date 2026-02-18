@@ -20,6 +20,10 @@ jobs:
           # # Optional (recommended) mail server username:
           # 用户名：google账户名
           username: ${{ secrets.MAIL_USERNAME }}
+          # 注意：不适用一般的 google 账户密码，而是使用 App 密码
+          # 参考：https://github.com/dawidd6/action-send-mail
+          # 1. 启用 2 步验证：https://support.google.com/accounts/answer/185839?hl=en&co=GENIE.Platform%3DAndroid
+          # 2. 为创建 App 密码：https://support.google.com/accounts/answer/185833?hl=en
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: CSDN Report
           body: Build job of ${{github.repository}} completed successfully!
